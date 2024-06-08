@@ -5,3 +5,4 @@ This project focuses on Event streaming architecture.
 * The is scheduled to Kafka using Apache Airflow.
 * From Kafka, the data is processed using Apache Spark.
 * Then the data is streamed to Cassandra
+  
