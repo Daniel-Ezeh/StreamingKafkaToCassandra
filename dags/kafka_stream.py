@@ -50,9 +50,9 @@ def stream_data():
     res = format_data(res)
     print(json.dumps(res, indent=3))
 
-    producer = KafkaProducer(
-        bootstrap_servers=['localhost:9092'],
-        max_block_ms=5000
+    producer = KafkaProducer( 
+        bootstrap_servers=['localhost:9092'], 
+        max_block_ms=2000
     )
 
     producer.send(
