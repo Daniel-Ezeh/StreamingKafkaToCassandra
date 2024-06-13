@@ -21,7 +21,6 @@ def get_data():
 
     return res
 
-
 def format_data(res):
     data = {}
     location = res['location']
@@ -51,7 +50,7 @@ def stream_data():
     print(json.dumps(res, indent=3))
 
     producer = KafkaProducer( 
-        bootstrap_servers=['localhost:9092'], 
+        bootstrap_servers=['broker:29092'], 
         max_block_ms=2000
     )
 
